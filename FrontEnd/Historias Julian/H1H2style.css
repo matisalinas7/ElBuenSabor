@@ -1,0 +1,239 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+
+
+
+
+
+.navbar.navbar-expand-lg {
+  background-color: #fff5ee;
+  border-bottom: 3px solid #ed9121;
+}
+
+#infoMessage p{
+
+    color: red !important;
+}
+
+
+.or-container {
+  align-items: center;
+  color: #ccc;
+  display: flex;
+  margin: 1px 0;
+}
+
+.line-separator {
+  background-color: #ccc;
+  flex-grow: 6;
+  height: 1px;
+}
+
+.or-label {
+  flex-grow: 1;
+  margin: 0 0px;
+  text-align: center;
+}
+.btn{
+ background-color: #ffffff;
+ color: black;
+
+}
+.row {
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  margin-left: 80px;
+}
+
+.boton {
+   padding: 5px 10px; /* Espacio interno del botón */
+   background-color:  #ED9121;
+; /* Color de fondo del botón */
+   color: #fff;       /* Color del texto del botón */
+   border: none;      /* Elimina el borde del botón */
+   border-radius: 5px; /* Añade esquinas redondeadas al botón */
+   cursor: pointer;   /* Cambia el cursor al pasar sobre el botón */
+}
+
+
+/* estilo segundo navbar*/
+.nav-tabs {
+   background-color: #FFF5EE !important;
+   border-radius: 10px;
+ }
+.nav-tabs .nav-link {
+   color: black !important;
+ }
+
+
+ 
+/*--boton cerrar modal*/
+.boton-cerrar{
+ background-color: #ff786c;
+ 
+}
+.boton-cerrar:hover {
+   background-color: #C7483C; /* Color de fondo al pasar el mouse */
+   transform: scale(1.1); /* Escala al pasar el mouse */
+ }
+
+/*--boton Iniciar Sesion y Crear Cuenta modal*/
+
+.boton-Ini{
+ background-color:  #ffa434;
+ margin-left:10px;
+   margin-right: 178px;
+ 
+}
+.boton-Cc{
+  background-color:  #ffa434;
+  margin-left:10px;
+    margin-right: 152px;
+  
+ }
+.boton-guardar:hover {
+   background-color: #ED9121; /* Color de fondo al pasar el mouse */
+   transform: scale(1.1); /* Escala al pasar el mouse */
+ }
+
+/* Boton Agregar */
+.contenedor {
+   text-align: right; /* Alinea el contenido a la derecha */
+   padding: 10px;     /* Espacio alrededor del botón */
+   margin-left: 1250px;
+   margin-right: 10px;
+}
+
+
+
+/* FOOTER */
+footer {
+ position: fixed;
+ bottom: 0;
+ height: 10;
+}
+
+h2 {
+ color: #ed9121;
+ text-align: center;
+ font-family: Inter, sans-serif;
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ letter-spacing: 5.44px;
+}
+
+@media (max-height: 800px) {
+ footer {
+   position: static;
+ }
+
+ /* header {
+   padding-top: 40px;
+ } */
+}
+
+
+.footer-distributed {
+ background-color: #fff5ee;
+ border-top: 3px solid #ed9121;
+ box-sizing: border-box;
+ width: 100%;
+ text-align: left;
+ font-family: Inter, sans-serif;
+ padding: 12px 20px 12px;
+}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+ display: inline-block;
+ vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+ width: 30%;
+}
+
+.footer-distributed .footer-left figure img {
+ max-width: 128px;
+ max-height: 128px;
+ width: 100%;
+ height: auto;
+ display: block;
+ margin: auto;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+ width: 40%;
+ text-align: center;
+}
+
+.footer-distributed .footer-center .contact-info {
+ display: inline-block;
+ margin: 12px;
+}
+
+.footer-distributed .footer-center .contact-info i {
+ color: #ed9121;
+ font-size: 24px;
+ width: auto;
+ height: 38px;
+ line-height: 48px;
+ text-align: center;
+}
+
+.footer-distributed .footer-center .contact-info p {
+ color: #220901;
+ text-align: center;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+ width: 25%;
+}
+
+.footer-distributed .footer-icons {
+ margin-top: 24px;
+ text-align: center;
+}
+
+.footer-distributed .footer-icons a {
+ display: inline-block;
+ width: 35px;
+ height: 35px;
+ cursor: pointer;
+ font-size: 24px;
+ color: #ed9121;
+ line-height: 80px;
+ text-align: center;
+}
+
+.footer-distributed .footer-icons a:hover {
+ color: #220901;
+}
+
+@media (max-width: 880px) {
+
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right {
+   display: block;
+   width: 100%;
+   margin-bottom: 40px;
+   text-align: center;
+ }
+
+ .footer-distributed .footer-center i {
+   margin-left: 0;
+ }
+}

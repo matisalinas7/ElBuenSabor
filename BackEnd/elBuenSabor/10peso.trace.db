@@ -1,0 +1,160 @@
+2023-11-14 10:28:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 10:28:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 10:28:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 10:29:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 10:29:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 10:29:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 10:29:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 10:29:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 10:29:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 12:01:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 12:01:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 12:01:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 12:01:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 12:03:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 12:04:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 12:04:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
+2023-11-14 19:12:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 19:12:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 19:14:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 19:14:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 19:16:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 19:16:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 19:16:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 19:16:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 20:35:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "drop table if exists [*]user cascade "; se esperaba "identifier"
+Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 20:35:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table [*]user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; se esperaba "identifier"
+Syntax error in SQL statement "create table [*]user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 20:39:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?) [42001-214]
+2023-11-14 20:44:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?) [42001-214]
+2023-11-14 20:48:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?) [42001-214]
+2023-11-14 20:50:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?) [42001-214]
+2023-11-14 20:52:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?) [42001-214]
+2023-11-14 20:53:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?) [42001-214]
+2023-11-14 21:00:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "drop table if exists [*]user cascade "; se esperaba "identifier"
+Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 21:00:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table [*]user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; se esperaba "identifier"
+Syntax error in SQL statement "create table [*]user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id integer not null, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 21:00:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,?) [42001-214]
+2023-11-14 21:04:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "drop table if exists [*]user cascade "; se esperaba "identifier"
+Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 21:04:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table [*]user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; se esperaba "identifier"
+Syntax error in SQL statement "create table [*]user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 21:04:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references [*]user"; se esperaba "identifier"
+Syntax error in SQL statement "alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references user [42001-214]
+2023-11-14 21:04:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,default)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,default)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,default) [42001-214]
+2023-11-14 21:05:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,default)"; se esperaba "identifier"
+Syntax error in SQL statement "insert into [*]user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,default)"; expected "identifier"; SQL statement:
+insert into user (country,firstname,lastname,password,role,username,id) values (?,?,?,?,?,?,default) [42001-214]
+2023-11-14 21:12:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "drop table if exists [*]user cascade "; se esperaba "identifier"
+Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 21:12:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table [*]user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; se esperaba "identifier"
+Syntax error in SQL statement "create table [*]user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 21:12:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references [*]user"; se esperaba "identifier"
+Syntax error in SQL statement "alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references user [42001-214]
+2023-11-14 21:15:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "drop table if exists [*]user cascade "; se esperaba "identifier"
+Syntax error in SQL statement "drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+drop table if exists user cascade  [42001-214]
+2023-11-14 21:15:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "create table [*]user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; se esperaba "identifier"
+Syntax error in SQL statement "create table [*]user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username))"; expected "identifier"; SQL statement:
+create table user (id bigint generated by default as identity, country varchar(255), firstname varchar(255), lastname varchar(255) not null, password varchar(255), role varchar(255) check (role in ('ADMIN','USER')), username varchar(255) not null, primary key (id), constraint UKsb8bbouer5wak8vyiiy4pf2bx unique (username)) [42001-214]
+2023-11-14 21:15:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references [*]user"; se esperaba "identifier"
+Syntax error in SQL statement "alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table if exists cliente add constraint FK5r88l8w8myx2otbcaovhf1jrb foreign key (user_id) references user [42001-214]

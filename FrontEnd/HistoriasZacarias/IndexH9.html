@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Usuario #9</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="shortcut icon"type="image/x-icon"href="img/logo-sintexto.svg"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"crossorigin="anonymous"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="JS/style.css" />
+   <link rel="stylesheet" href="StyleH9.css">
+    <link rel="stylesheet" href="StyleFooter.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #efdecd">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://raw.githubusercontent.com/Zackgd/10Peso/dc50ea0fc67d0a106b1dd56267827eb0b88d5d32/logonombre.svg"
+              alt="Logo"
+              width="60"
+              height="60"
+              class="d-inline-block align-text-center"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Contactos</a>
+              <a class="nav-link" href="#">Productos</a>
+            </div>
+            <nav class="navbar">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar"
+                    aria-label="Search"
+                  />
+                </form>
+              </div>
+            </nav>
+            <button class="btn btn-carrito"><i class="bi bi-cart3"></i></button>
+            <div class="dropdown-center">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nombre Cliente
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Mi Carrito</a></li>
+                <li><a class="dropdown-item" href="#">Configuracion</a></li>
+                <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <form class="d-flex custom-search-form" role="search">
+          <input class="form-control me-2" type="search" placeholder="Categoria 1" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+      <!-- Primer Contenedor-->
+    <div class="container mt-2 ml-0">
+        <div class="categoria">
+            <h3>Categoría 1</h3>
+        </div>
+            <div class="row contenedor1">
+                <div class="col-md-4">
+                    <div class="comida">
+                        <div class="imagen">
+                            <img src="Imagenes/Pizza1.jpeg" alt="Comida GOD" class="img-fluid foto">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="comida">
+                        <div class="info">
+                            <h3>Nombre Comida</h3>
+                            <p>Precio: $99999</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="iconos d-flex justify-content-center">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search lupa1 " viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-basket2 carrito1" viewBox="0 0 16 16">
+                                    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                                </svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Segundo Contenedor-->
+            <div class="row contenedor1">
+                <div class="col-md-4">
+                    <div class="comida">
+                        <div class="imagen">
+                            <img src="Imagenes/Pizza2.jpeg" alt="Comida GOD" class="img-fluid foto">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="comida">
+                        <div class="info">
+                            <h3>Nombre Comida</h3>
+                            <p>Precio: $99999</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="iconos d-flex flex-md-row">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search lupa1" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-basket2 carrito1" viewBox="0 0 16 16">
+                                    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Tercer Contenedor-->
+            <div class="row contenedor1">
+                <div class="col-md-4">
+                    <div class="comida">
+                        <div class="imagen">
+                            <img src="Imagenes/OIP.jpeg" alt="Comida GOD" class="img-fluid foto">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="comida">
+                        <div class="info">
+                            <h3>Nombre Comida</h3>
+                            <p>Precio: $99999</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="iconos d-flex flex-md-row">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search lupa1" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            
+                               
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-basket2 carrito1" viewBox="0 0 16 16">
+                                    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                                </svg>
+                            </div>
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Cuarto Contenedor Segunda Categoria-->
+            <div class="categoria">
+                <h3>Categoría 2</h3>
+           
+            <div class="row contenedor1">
+                <div class="col-md-4">
+                    <div class="comida">
+                        <div class="imagen">
+                            <img src="Imagenes/Pizza3.jpeg" alt="Comida GOD" class="img-fluid foto">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="comida">
+                        <div class="info">
+                            <h3>Nombre Comida</h3>
+                            <p>Precio: $99999</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="iconos d-flex flex-md-row">
+                               
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search lupa1" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket2 carrito1" viewBox="0 0 16 16">
+                                    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row contenedor1">
+                <div class="col-md-4">
+                    <div class="comida">
+                        <div class="imagen">
+                            <img src="Imagenes/OIR.jpeg" alt="Comida GOD" class="img-fluid foto">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="comida">
+                        <div class="info">
+                            <h3>Nombre Comida</h3>
+                            <p>Precio: $99999</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="iconos d-flex flex-md-row">
+                               
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search lupa1" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket2 carrito1" viewBox="0 0 16 16">
+                                    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row contenedor1">
+                <div class="col-md-4">
+                    <div class="comida">
+                        <div class="imagen">
+                            <img src="Imagenes/OIR.jpeg" alt="Comida GOD" class="img-fluid foto">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="comida">
+                        <div class="info">
+                            <h3>Nombre Comida</h3>
+                            <p>Precio: $99999</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="iconos ">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search lupa1" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket2 carrito1" viewBox="0 0 16 16">
+                                    <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <!--Footer-->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+          <figure>
+            <a href="#">
+              <img src="Imagenes/El Buen Sabor logo sin letras.svg" alt="Logo El Buen Sabor"/>
+            </a>
+          </figure>
+        </div>
+  
+        <div class="footer-center">
+          <div>
+            <h2>CONTACTANOS</h2>
+          </div>
+  
+          <div class="contact-info">
+            <div>
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div>
+              <p>+12 3456789</p>
+            </div>
+          </div>
+  
+          <div class="contact-info">
+            <div>
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div>
+              <p>Calle Falsa 123</p>
+            </div>
+          </div>
+  
+          <div class="contact-info">
+            <div>
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div>
+              <p>elbuensabor@gmail.com</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-right">
+          <div>
+            <h2>¡SEGUINOS!</h2>
+          </div>
+  
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

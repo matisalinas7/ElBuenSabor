@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/logo-sintexto.svg"
+    />
+    <title>El Buen Sabor</title>
+  </head>
+
+  <!-- Barra de navegacion -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logonombre.svg"
+            alt="Logo"
+            width="60"
+            height="60"
+            class="d-inline-block align-text-center"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#">Contactos</a>
+            <a class="nav-link" href="#">Productos</a>
+          </div>
+          <nav class="navbar">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+          </nav>
+          <button class="btn btn-carrito"><i class="bi bi-cart3"></i></button>
+          <div class="dropdown-center">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Cajero 1
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Ver Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+
+    <!-- Resumen de Orden -->
+    <div class="contenedor">
+      <div class="table-responsive numeroOrden">
+        <h2>Orden #1111</h2>
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">Estado</th>
+              <th scope="col">Método de pago</th>
+              <th scope="col">Forma de entrega</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle filtrar"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: #ec7063"
+                  >
+                    A confirmar
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" style="color: #f5b041"
+                        >En cocina</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" style="color: #bb8fce"
+                        >Listo</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" style="color: #c94848"
+                        >Anular pedido</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </th>
+              <td>Efectivo</td>
+              <td>Retira en local</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary actualizar" type="button">
+            Actualizar
+          </button>
+        </div>
+      </div>
+
+      <div class="table-responsive datosCliente">
+        <h2>Cliente</h2>
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Teléfono</th>
+              <th scope="col">Mail</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>+123456789</td>
+              <td>cliente@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-responsive detalles">
+        <h2>Detalles</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">Bacon Burger</th>
+              <td>$3000</td>
+              <td>2</td>
+              <td>$6000</td>
+            </tr>
+            <tr>
+              <th scope="row">CocaCola 500ml</th>
+              <td>$800</td>
+              <td>2</td>
+              <td>$1600</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-responsive total">
+        <h2>Total</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Subtotal</th>
+              <th scope="col" style="font-weight: lighter">$7600</th>
+            </tr>
+            <tr>
+              <th scope="col">Descuento</th>
+              <th scope="col" style="font-weight: lighter">$500</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">Total</th>
+              <td scope="row" style="font-weight: bold">$7100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <figure>
+          <a href="#">
+            <img src="img/logonombre.svg" alt="Logo El Buen Sabor" />
+          </a>
+        </figure>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <h2>CONTACTANOS</h2>
+        </div>
+
+        <div class="contact-info">
+          <div>
+            <i class="bi bi-telephone"></i>
+          </div>
+          <div>
+            <p>+12 3456789</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div>
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <div>
+            <p>Calle Falsa 123</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div>
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div>
+            <p>elbuensabor@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div>
+          <h2>¡SEGUINOS!</h2>
+        </div>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/" target="_blank"
+            ><i class="bi bi-tiktok"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

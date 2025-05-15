@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="H3style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://raw.githubusercontent.com/Zackgd/10Peso/dc50ea0fc67d0a106b1dd56267827eb0b88d5d32/logonombre.svg"
+    />
+    <title>El Buen Sabor</title>
+    <!--CSS Bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+   
+  <link rel="stylesheet" href="H4style.css" />
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #EFDECD">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://raw.githubusercontent.com/Zackgd/10Peso/dc50ea0fc67d0a106b1dd56267827eb0b88d5d32/logonombre.svg" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" href="#">Contactos</a>
+          <a class="nav-link" href="#">Productos</a>
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid ">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+              </form>
+            </div>
+          </nav>
+          <button class="btn btn-carrito"><i class="bi bi-cart3"></i></button>
+        <div class="dropdown-center">
+          <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nombre Admin
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Ver Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </head>
+  <body>
+    
+
+ 
+ <!-- Segundo navbar -->
+ <div class="d-flex justify-content-center my-4">
+   <ul class="nav nav-tabs">
+     <li class="nav-item">
+       <a class="nav-link" aria-current="page" href="#">Principal</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link active" href="#">Usuarios</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link " href="#">Rubros</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" aria-disabled="true">Stock</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" aria-disabled="true">Estadistica</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" aria-disabled="true">Movimientos Monetarios</a>
+     </li>
+   </ul>
+ </div>
+ <!--Botones Opciones-->
+ <div class="d-flex justify-content-center ">
+   <div class="btn-group col-4 " role="group">
+     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+     <label class="btn " for="btnradio1">Empleados</label>
+     <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+     <label class="btn " for="btnradio2">Clientes</label>
+   </div>
+ </div>
+ <!--Modal agregar-->
+ <div class="contenedor">
+ <button  class="btn" style="background-color: #ED9121; color:white;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   Agregar Empleado
+ </button>
+ </div>
+ <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title"> Nuevo Empleado</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="mb-3">
+           <label for="recipient-name" class="col-form-label">Nombre Completo</label>
+           <input type="text" class="form-control"  placeholder="Ingrese Nombre del Nuevo Empleado" id="recipient-name">
+         </div>
+         <div class="mb-3">
+           <label for="recipient-name" class="col-form-label">DNI</label>
+           <input type="text" class="form-control"  placeholder="Ingrese DNI del Nuevo Empleado" id="recipient-name">
+         </div>
+         <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Telefono</label>
+          <input type="text" class="form-control" placeholder="Ingrese Telefono del Nuevo Empleado" id="recipient-name">
+        </div>
+        <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Email</label>
+          <input type="text" class="form-control" placeholder="Ingrese Email del Nuevo Empleado" id="recipient-name">
+        </div>
+        <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Ingresar Contraseña Provisoria</label>
+          <input type="text" class="form-control" placeholder="Min 8 caracteres , 1 letra mayús , 1 letra minús , 1 símbolo."  id="recipient-name">
+        </div>
+        <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Re-Ingresar Contraseña Provisoria</label>
+          <input type="text" class="form-control" placeholder="Min 8 caracteres , 1 letra mayús , 1 letra minús , 1 símbolo." id="recipient-name">
+        </div>
+        <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Rol</label>
+          <div class="dropdown-center">
+            <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rol
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Cocinero</a></li>
+              <li><a class="dropdown-item" href="#">Cajero</a></li>
+              <li><a class="dropdown-item" href="#">Administrador</a></li>
+            </ul>
+          </div>
+        </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn boton-cerrar" data-bs-dismiss="modal">Cancelar</button>
+         <button type="button" class="btn boton-guardar">Guardar</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!--Modar editar-->
+ <div class="modal fade " id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Editar Empleado </h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="mb-3">
+           <label for="recipient-name" class="col-form-label">Nombre</label>
+           <input type="text" class="form-control" id="recipient-name">
+         </div>
+         <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Rol</label>
+          <div class="dropdown-center">
+            <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rol
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Cocinero</a></li>
+              <li><a class="dropdown-item" href="#">Cajero</a></li>
+              <li><a class="dropdown-item" href="#">Administrador</a></li>
+            </ul>
+          </div>
+        </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn boton-cerrar" data-bs-dismiss="modal">Cancelar</button>
+         <button type="button" class="btn boton-guardar">Guardar</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!--Tabla-->
+     <div class="container mb-3"class="table-responsive">
+       <table class="table table-hover table-bordered table-sm tabla-pr">
+         <thead>
+           <tr >
+            
+             <th scope="col">Nombre</th>
+             <th scope="col">Rol</th>
+             <th scope="col">Estado</th>
+             <th scope="col">Acciones</th>
+           </tr>
+         </thead>
+         <tbody class="table-group-divider">
+           <tr class="align-bottom">
+            <td>Empleado1</td>
+            <td><button id="btn-alta">Cocinero</button></td>
+            <td><button id="btn-alta">Alta</button></td>
+            <td>
+              <button class="btn-editar" data-bs-toggle="modal" data-bs-target="#exampleModa2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+               </svg>
+             
+              </button> &nbsp
+             </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+               <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+               <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+             </svg></td>
+          </tr class="align-bottom">
+          <tr>
+            
+            <td>Empleado2</td>
+            <td><button id="btn-alta">Cocinero</button></td>
+            <td><button id="btn-alta">Alta</button></td>
+            <td>
+              <button class="btn-editar" data-bs-toggle="modal" data-bs-target="#exampleModa2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+               </svg>
+             
+              </button> &nbsp
+             </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+               <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+               <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+             </svg></td>
+          </tr class="align-bottom">
+          <tr>
+            
+            <td>Empleado3</td>
+            <td><button id="btn-baja">Cajero</button></td>
+            <td><button id="btn-baja">Baja</button></td>
+            <td>
+              <button class="btn-editar" data-bs-toggle="modal" data-bs-target="#exampleModa2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+               </svg>
+             
+              </button>  &nbsp
+             </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+               <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+               <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+             </svg></td>
+          </tr class="align-bottom">
+          <tr>
+            
+            <td>Empleado4</td>
+            <td><button id="btn-alta">Cajero</button></td>
+            <td><button id="btn-alta">Alta</button></td>
+            <td>
+              <button class="btn-editar" data-bs-toggle="modal" data-bs-target="#exampleModa2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+               </svg>
+             
+              </button> &nbsp
+             </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+               <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+               <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+             </svg></td>
+          </tr class="align-bottom">
+          <tr>
+        </tbody>
+      </table>
+    </div>
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   
+ 
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <figure>
+          <a href="#">
+            <img
+              src="logo-sintexto.svg"
+              alt="Logo El Buen Sabor"
+            />
+          </a>
+        </figure>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <h2>CONTACTANOS</h2>
+        </div>
+
+        <div class="contact-info">
+          <div>
+            <i class="bi bi-telephone"></i>
+          </div>
+          <div>
+            <p>+12 3456789</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div>
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <div>
+            <p>Calle Falsa 123</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div>
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div>
+            <p>elbuensabor@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div>
+          <h2>¡SEGUINOS!</h2>
+        </div>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+        </body>
+     </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+     <!-- Incluir el archivo CSS de Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Historia#12.1</title>
+  </head>
+  <body style="background-image: url(Imagenes/image.png);background-size: cover;>
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #EFDECD">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://raw.githubusercontent.com/Zackgd/10Peso/4afad3151c6b78d01aa2f6ef544ae18974db6366/logonombre.svg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#">Contactos</a>
+            <a class="nav-link" href="#">Productos</a>
+          </div>
+          <nav class="navbar">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              </form>
+            </div>
+          </nav>
+        <button class="btn btn-carrito"><i class="bi bi-cart3"></i></button>
+          <div class="dropdown-center">
+            <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nombre Cliente
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Mi Carrito</a></li>
+              <li><a class="dropdown-item" href="#">Configuracion</a></li>
+              <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- Formulario con el título dentro -->
+      <div class="row mt-4">
+        <div class="col-md-6 offset-md-3">
+            <form>
+                <!-- Título dentro del formulario -->
+                <h3 class="text-center">Ingrese Informacion para Delivery</h3>
+    
+                <div class="bg-dark text-light p-4 rounded"> <!-- Utilizamos la clase "rounded" para aplicar el redondeo a los bordes -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Departamento</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Departamento">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Calle Actual</label>
+                        <input type="email" class="form-control" id="correo" placeholder="Ingrese calle/s">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Número Telefonico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="Ingrese su Número ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-secondary">Confirmar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+  <!-- Incluir el archivo JavaScript de Bootstrap y jQuery (opcional) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.footer {
+  background-color: #424949; /* Color de fondo gris oscuro */
+  color: #fff; /* Color del texto en el footer (blanco) */
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex; /* Usar flexbox para alinear los divs horizontalmente */
+  justify-content: space-between; /* Espaciado uniforme entre los divs */
+  align-items: center;
+}
+
+.footer-section {
+  flex: 1; /* Cada div ocupa una parte igual de espacio disponible */
+  padding: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Espacio entre el contenido y el footer-bottom */
+}

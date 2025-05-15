@@ -1,0 +1,16 @@
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre las tarjetas */
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Para permitir que las tarjetas se envuelvan */
+  }
+  
+  .card {
+    flex: 0 0 calc(33.33% - 20px); /* 33.33% del ancho con 20px de espacio entre */
+  }
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }

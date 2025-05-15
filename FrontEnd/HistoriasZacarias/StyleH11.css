@@ -1,0 +1,79 @@
+.navbar-custom{
+    background-color:#ED9121;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+    height: 90px;
+    background: linear-gradient(to bottom, #ED9121, #ffd57e)
+}
+.usu{
+    margin-right: 10px;
+    
+}
+.carrito{
+    margin-left: 10px;
+}
+.lupa{
+    margin-left: 20px;
+}
+.regi{
+    background-color: #ED9121;
+    
+}
+.ISesion{
+    background-color: #ED9121;
+    
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+.dropdown button{
+    margin-left: 30px;
+}
+/*----------------------------------------------------------------H#9--------------------------------*/
+.contenedor1{
+    background-color:#EFDECD;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 25px;
+    
+
+}
+.foto{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.lupa1{
+    margin-left:600px ;
+    margin-top:90px;
+}
+.carrito1{
+    margin-top: 90px;
+    margin-left: 15px;
+}
+.custom-search-form {
+    max-width: 300px; 
+    margin-left: 10px; 
+    margin-top: 10px;
+}
+.categoria{margin-top: 15px;}
+.TCarrito{
+    font-family: Inter, sans-serif;
+    letter-spacing: 5.44px;
+    font-size: 10px;
+    color: #000;
+
+}
+.Det{
+    margin-bottom: 50px;
+
+}
+
+
+
+

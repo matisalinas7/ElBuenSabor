@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Usuario #11</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="StyleH11.css">
+       
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg" style="background-color: #efdecd">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://raw.githubusercontent.com/Zackgd/10Peso/dc50ea0fc67d0a106b1dd56267827eb0b88d5d32/logonombre.svg"
+          alt="Logo"
+          width="60"
+          height="60"
+          class="d-inline-block align-text-center"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" href="#">Contactos</a>
+          <a class="nav-link" href="#">Productos</a>
+        </div>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </nav>
+        <button class="btn btn-carrito"><i class="bi bi-cart3"></i></button>
+        <div class="dropdown-center">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Nombre Cliente
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Mi Carrito</a></li>
+            <li><a class="dropdown-item" href="#">Configuracion</a></li>
+            <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      <!-- Primer Contenedor-->
+    <div class="container mt-2 ml-0">
+        <div class="categoria TCarrito">
+            <h2>Carrito de Compra</h2>
+        </div>
+            <div class="row contenedor1">
+                <div class="container mt-4">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="Imagenes/Pizza2.jpeg" alt="Producto" class="img-fluid" class="img-fluid" style="border-radius: 10px; margin-bottom: 10px;">
+                      </div>
+                      <div class="col-md-8">
+                        <h2>Hamburguesa 1</h2>
+                        <p>Precio: $25</p>
+                        <p>Descripción del producto.</p>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="quantity">Cantidad</label>
+                          </div>
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="decreaseQuantity">-</button>
+                          </div>
+                          <div style="width: 220px; display: flex;">
+                            <input type="text" id="quantity" name="quantity" class="form-control text-center" value="1" readonly>
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary" type="button" id="decreaseQuantity">+</button>
+                            </div>
+                          </div>
+                        </div>
+                        <p>Subtotal: $<span id="subtotal">25</span></p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-search"></i> Detalles</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Segundo Contenedor-->
+            <div class="row contenedor1">
+                <div class="container mt-4">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="Imagenes/Pizza2.jpeg" alt="Producto" class="img-fluid" class="img-fluid" style="border-radius: 10px; margin-bottom: 10px;">
+                      </div>
+                      <div class="col-md-8">
+                        <h2>Pizza 1</h2>
+                        <p>Precio: $25</p>
+                        <p>Lorem ipsum dolor, imos culpa,milique a?.</p>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="quantity">Cantidad</label>
+                          </div>
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increaseQuantity">-</button>
+                          </div>
+                          <div style="width: 220px; display: flex;">
+                          <input type="text" id="quantity" name="quantity" class="form-control text-center" value="1" readonly>
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="decreaseQuantity">+</button>
+                          </div>
+                        </div>
+                        </div>
+                        <p>Subtotal: $<span id="subtotal">25</span></p>
+                        <a href="#" class="btn btn-primary Det"><i class="fas fa-search"></i> Detalles</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!--Tercer Contenedor-->
+            <div class="row contenedor1">
+                <div class="container mt-4">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="Imagenes/Pizza2.jpeg" alt="Producto" class="img-fluid" style="border-radius: 10px; margin-bottom: 10px;">
+                      </div>
+                      <div class="col-md-8">
+                        <h2>Panchito 1</h2>
+                        <p>Precio: $25</p>
+                        <p>Descripción del producto.</p>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="quantity">Cantidad</label>
+                          </div>
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increaseQuantity">-</button>
+                          </div>
+                          <div style="width: 220px; display: flex;">
+                          <input type="text" id="quantity" name="quantity" class="form-control text-center" value="1" readonly>
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="decreaseQuantity">+</button>
+                          </div>
+                        </div>
+                        </div>
+                        <p>Subtotal: $<span id="subtotal">25</span></p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-search"></i> Detalles</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    <!-- Bootstrap y FontAwesome Scripts -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ <script> 
+   // Actualiza el subtotal inicialmente
+   updateSubtotal(1);
+ </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</body>
+</html>

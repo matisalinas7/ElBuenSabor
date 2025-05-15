@@ -1,0 +1,246 @@
+body{
+    background-color: #FFF5EE;
+}
+
+.logonavbar{
+  margin-left: 40px;
+}
+
+.navbar-custom{
+    background-color:#ED9121;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 90px;
+    background: linear-gradient(to bottom, #ED9121, #ffd57e)
+}
+.usu{
+    margin-right: 10px;
+    
+}
+.carrito{
+    margin-left: 10px;
+}
+.lupa{
+    margin-left: 20px;
+}
+.regi{
+    background-color: #ED9121;
+    
+}
+.ISesion{
+    background-color: #ED9121;
+    
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+.dropdown button{
+    margin-left: 30px;
+}
+.Prod{
+    background-color:aqua;
+    width:900px;
+    height:120px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    border-radius: 16px;
+    display: flex;
+}
+.Prod img{
+    width: 45%;/*la imagen ocupa el 100% del contenedor establecido*/
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 0;
+}
+.contenerdor{
+    margin:0;
+    padding: 0;
+    
+}
+.Texto{
+    width: 66.66%;
+    height: 100%;
+}
+h1{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+.Titulo1{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+.container{
+    margin-left: 150px;
+}
+
+.botonef{
+    background-color: #ffd57e;
+    color: #000;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 175px;
+  }
+
+.encabezadotabla{
+    background-color: #FCC7A1;
+    height:15px;
+    width: 200px;
+}
+
+.botonfac{
+  color:#ED9121;
+}
+
+.rectangulomarron {
+  background-color: #EFDECD;
+  border-radius: 5px;
+  padding: 5px; 
+  position: relative;
+}
+
+.col-md-10 {
+  overflow: hidden; 
+  position: relative;
+}
+
+
+h2 {
+    color: #ed9121;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5.44px;
+  }
+
+#titulofacturacion{
+    margin-top: 64px;
+    margin-bottom: 8px;
+    font-family: Inter, sans-serif; 
+    color:#000
+}
+  
+  @media (max-height: 800px) {
+    footer {
+      position: static;
+    }
+    /* header {
+      padding-top: 40px;
+    } */
+  }
+  
+  .footer-distributed {
+    background-color: #fff5ee;
+    border-top: 3px solid #ed9121;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-family: Inter, sans-serif;
+    padding: 12px 20px 12px;;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left {
+    width: 30%;
+  }
+  
+  .footer-distributed .footer-left figure img {
+    max-width: 128px;
+    max-height: 128px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .footer-distributed .footer-center .contact-info {
+    display: inline-block;
+    margin: 12px;
+  }
+  
+  .footer-distributed .footer-center .contact-info i {
+    color: #ed9121;
+    font-size: 24px;
+    width: auto;
+    height: 38px;
+    line-height: 48px;
+    text-align: center;
+  }
+  
+  .footer-distributed .footer-center .contact-info p {
+    color: #220901;
+    text-align: center;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right {
+    width: 25%;
+  }
+  
+  .footer-distributed .footer-icons {
+    margin-top: 24px;
+    text-align: center;
+  }
+  
+  .footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ed9121;
+    line-height: 80px;
+    text-align: center;
+  }
+  
+  .footer-distributed .footer-icons a:hover {
+    color: #220901;
+  }
+  
+  @media (max-width: 880px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer-distributed .footer-center i {
+      margin-left: 0;
+    }
+  }

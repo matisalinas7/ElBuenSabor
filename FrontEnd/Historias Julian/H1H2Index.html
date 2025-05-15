@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="https://raw.githubusercontent.com/Zackgd/10Peso/dc50ea0fc67d0a106b1dd56267827eb0b88d5d32/logonombre.svg"
+  />
+  <title>El Buen Sabor</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+    <link rel="stylesheet" href="H1H2style.css" />
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #d7a572" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> 
+          <img src="https://raw.githubusercontent.com/Zackgd/10Peso/dc50ea0fc67d0a106b1dd56267827eb0b88d5d32/logonombre.svg" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          
+          <nav class="navbar">
+            <div class="contenedor">
+            <div class="navbar-nav ml-auto">
+              <button class="btn" style="background-color: #c87625; color: #EFDECD;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Iniciar Sesión
+              </button> &nbsp
+              <button class="btn" style="background-color: #EFDECD; color: #c87625;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Crear Cuenta
+              </button>
+              
+            </div>
+          </div>
+              <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title"> CREA TU CUENTA DEL BUEN SABOR</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su Nombre Completo" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">DNI</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su DNI" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                       <label for="recipient-name" class="col-form-label">Telefono</label>
+                       <input type="text" class="form-control" placeholder="Ingrese su Telefono" id="recipient-name">
+                     </div>
+                     <div class="mb-3">
+                       <label for="recipient-name" class="col-form-label">Email</label>
+                       <input type="text" class="form-control" placeholder="Ingrese su Email" id="recipient-name">
+                     </div>
+                     <div class="mb-3">
+                       <label for="recipient-name" class="col-form-label">Ingresar Contraseña </label>
+                       <input type="password" class="form-control" name="password" placeholder="Min 8 caracteres , 1 letra mayús , 1 letra minús , 1 símbolo." value="" id="password">
+                     </div>
+                     <div class="mb-3">
+                       <label for="recipient-name" class="col-form-label">Re-Ingresar Contraseña </label>
+                       <input type="password" class="form-control" name="password" placeholder="Min 8 caracteres , 1 letra mayús , 1 letra minús , 1 símbolo." value="" id="password">
+
+                     </div>
+                    
+                     <div class="modal-footer">
+                      
+                      <button type="button" class="btn boton-Cc">CREAR CUENTA</button>
+                    </div>
+                  <div class="or-container"><div class="line-separator"></div> <div class="or-label">O</div><div class="line-separator"></div></div>
+
+
+                  <div class="row">
+                      <div class="col-md-12">
+                        <a class="btn btn-lg btn-google btn-block btn-outline" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Des-419&ec=GAlA8wE&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-334750599%3A1695088534703871&theme=glif"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Inicia Sesion con Google</a>
+                       
+                      </div>
+                  </div>
+                  <br>
+
+                  <p class="text-inverse text-center">Ya Tienes una Cuenta? <a href="#exampleModal2" data-abc="true" data-bs-toggle="modal" data-bs-target="#exampleModal2">Login</a></p>
+                     
+                    </div>            
+                    
+                  </div>
+                </div>
+              </div>
+             
+              
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h6 class="modal-title"> INICIA SESION CON TU CUENTA DEL BUEN SABOR</h6> <br>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                       
+                       <div class="mb-3">
+                         <label for="recipient-name" class="col-form-label">Email</label>
+                         <input type="text" class="form-control" placeholder="Ingrese su Email" id="recipient-name">
+                       </div>
+                       <div class="mb-3">
+                         <label for="recipient-name" class="col-form-label">Contraseña </label>
+                         <input type="password" class="form-control" name="password" placeholder="Password" value="" id="password">
+                       </div>
+                       
+                       
+                      </div>
+                      <div class="modal-footer">
+                       
+                        <button type="button" class="btn boton-Ini">Iniciar Sesion</button>
+                        
+            
+                      </div>
+                      <div class="or-container"><div class="line-separator"></div> <div class="or-label">O</div><div class="line-separator"></div></div>
+
+
+                  <div class="row">
+                      <div class="col-md-12">
+                        <a class="btn btn-lg btn-google btn-block btn-outline" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Des-419&ec=GAlA8wE&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-334750599%3A1695088534703871&theme=glif">
+                          <img src="https://img.icons8.com/color/16/000000/google-logo.png"> Inicia Sesion con Google</a>
+
+                      </div>
+                  </div>
+                  <br>
+
+                  <p class="text-inverse text-center">No tienes Cuenta? Crea una <a href="#exampleModal" data-abc="true" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</a></p>
+                      
+                    </div>
+                  </div>
+                </div>
+             
+            </nav>
+           
+         
+        </div>
+      </div>
+    </nav>
+    
+
+  </head>
+  <body>
+    <style>
+    body {
+      background-image:url(FONDO.png);
+      background-repeat: no-repeat;
+      background-size: cover; 
+    } </style>
+    
+
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <figure>
+            <a href="#">
+              <img
+                src="logo-sintexto.svg"
+                alt="Logo El Buen Sabor"
+              />
+            </a>
+          </figure>
+        </div>
+        
+  
+        <div class="footer-center">
+          <div>
+            <h2>CONTACTANOS</h2>
+          </div>
+  
+          <div class="contact-info">
+            <div>
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div>
+              <p>+12 3456789</p>
+            </div>
+          </div>
+  
+          <div class="contact-info">
+            <div>
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div>
+              <p>Calle Falsa 123</p>
+            </div>
+          </div>
+  
+          <div class="contact-info">
+            <div>
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div>
+              <p>elbuensabor@gmail.com</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-right">
+          <div>
+            <h2>¡SEGUINOS!</h2>
+          </div>
+  
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+
+  </body>
+</html>
