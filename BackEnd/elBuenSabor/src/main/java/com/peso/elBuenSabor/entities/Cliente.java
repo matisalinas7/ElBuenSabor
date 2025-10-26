@@ -2,6 +2,7 @@ package com.peso.elBuenSabor.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -15,15 +16,19 @@ import java.util.List;
 @Setter
 public class Cliente extends Base{
 
+    @NotNull
+    @Column(nullable = false)
     private String nombre;
 
     private String apellido;
 
     private String telefono;
 
+    @Column(unique = true)
     private String email;
 
-    @Column(name = "fecha_alta")
+    @NotNull
+    @Column(nullable = false, name = "fecha_alta")
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaAlta;
 
@@ -38,13 +43,5 @@ public class Cliente extends Base{
     @OneToOne
     @JoinColumn(name = "user_id")
     private User user;
-
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "cliente_id")
-    private List<Pedido> pedidos = new ArrayList<>();
-
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "cliente_id")
-    private List<Domicilio> domicilios = new ArrayList<>();
 
 }

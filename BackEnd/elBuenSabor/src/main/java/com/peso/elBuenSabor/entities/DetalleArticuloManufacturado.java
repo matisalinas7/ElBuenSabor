@@ -21,10 +21,14 @@ import java.math.BigDecimal;
 public class DetalleArticuloManufacturado extends Base{
 
     @NotNull
-    @Column(name = "cantidad")
+    @Column(nullable = false, name = "cantidad")
     private BigDecimal cantidad;
 
     @NotNull
-    @Column(name = "unidad_medida")
+    @Column(nullable = false, name = "unidad_medida")
     private String unidadMedida;
+
+    @ManyToOne
+    @JoinColumn(name = "articulo_insumo_id")
+    private ArticuloInsumo articuloInsumo;
 }

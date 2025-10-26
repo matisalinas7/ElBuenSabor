@@ -9,6 +9,8 @@ public interface ArticuloInsumoService extends BaseService<ArticuloInsumo, Long>
 //     Historia usuario #25 - Control de stock de ingredientes
     List<ArticuloInsumo> findArticuloInsumoByStockActualBajoStockMinimo();
 
-    List<ArticuloInsumo> findArticuloInsumoByStockActualCercaStockMinimo();
+    List<ArticuloInsumo> findArticuloInsumoByStockActualCercaStockMinimo(Double margen);
+
 //
 }
+

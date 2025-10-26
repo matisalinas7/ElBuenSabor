@@ -24,9 +24,10 @@ public class ArticuloInsumoServiceImpl extends BaseServiceImpl<ArticuloInsumo, L
     }
 
     @Override
-    public List<ArticuloInsumo> findArticuloInsumoByStockActualCercaStockMinimo() {
-        return articuloInsumoRepository.findArticuloInsumoByStockActualCercaStockMinimo();
+    public List<ArticuloInsumo> findArticuloInsumoByStockActualCercaStockMinimo(Double margen) {
+        return articuloInsumoRepository.findArticuloInsumoByStockActualCercaStockMinimo(margen);
     }
+
 //
 
 }

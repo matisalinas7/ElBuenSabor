@@ -10,8 +10,5 @@ import java.util.List;
 
 @Repository
 public interface PedidoRepository extends BaseRepository<Pedido, Long> {
-
-    // JPQL parametros indexados
-    @Query(value = "SELECT p FROM Pedido p WHERE p.cliente.id = :cliente_id")
-    List<Pedido> findBycliente_id(@Param("cliente_id") Long cliente_id);
+    List<Pedido> findByClienteId(@Param("clienteId") Long clienteId);
 }

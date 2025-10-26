@@ -24,10 +24,18 @@ import java.math.BigDecimal;
 public class DetalleFactura extends Base{
 
     @NotNull
+    @Column(nullable = false)
     private Integer cantidad;
 
     @NotNull
-    @Column(name = "subtotal")
+    @Column(nullable = false)
     private BigDecimal subtotal;
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "factura_id")
+    private Factura factura;
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "articulo_manufacturado_id")
+    private ArticuloManufacturado articuloManufacturado;
 }

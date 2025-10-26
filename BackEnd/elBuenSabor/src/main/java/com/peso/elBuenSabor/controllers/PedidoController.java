@@ -15,18 +15,11 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping(path = "elbuensabor/v1/pedidos")
-public class PedidoController extends BaseControllerImpl<Pedido, PedidoServiceImpl> {
+public class PedidoController extends BaseControllerImpl<Pedido, PedidoService> {
 
-    private final PedidoService pedidoService;
-
-    @Autowired
-    public PedidoController(PedidoService pedidoService) {
-        this.pedidoService = pedidoService;
-    }
-
-    @GetMapping("/cliente")
-        public List<Pedido> getPedidosBycliente_id(@PathVariable Long cliente_id) {
-            return pedidoService.findPedidosBycliente_id(cliente_id);
+    @GetMapping("/cliente/{clienteId}")
+        public List<Pedido> getPedidosByClienteId(@PathVariable Long clienteId) {
+            return servicio.findPedidosByClienteId(clienteId);
         }
 
 }

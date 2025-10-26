@@ -1,6 +1,7 @@
 package com.peso.elBuenSabor.controllers;
 
 import com.peso.elBuenSabor.entities.Base;
+import com.peso.elBuenSabor.services.BaseService;
 import com.peso.elBuenSabor.services.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
 
-public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceImpl<E, Long>> implements BaseController<E, Long> {
+public abstract class BaseControllerImpl<E extends Base, S extends BaseService<E, Long>> implements BaseController<E, Long> {
 
     @Autowired
     protected S servicio;

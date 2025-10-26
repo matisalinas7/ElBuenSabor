@@ -33,12 +33,11 @@ public interface ArticuloManufacturadoRepository extends BaseRepository<Articulo
     );
 
 
-    // (Buscar un Articulo Manufacturado segun su denominacion)
+    // Búsqueda normal
     List<ArticuloManufacturado> findByDenominacion(String denominacion);
 
-    List<ArticuloManufacturado> findByDenominacion(String denominacion, Pageable pageable);
-
-
+    // Búsqueda paginada
+    Page<ArticuloManufacturado> findByDenominacion(String denominacion, Pageable pageable);
 
     // Anotacion JPQL parametros indexados (Buscar artículos manufacturados con un precio de venta mayor que cierto valor)
     @Query("SELECT am FROM ArticuloManufacturado am WHERE am.precioVenta > :precio")
@@ -56,20 +55,12 @@ public interface ArticuloManufacturadoRepository extends BaseRepository<Articulo
     @Query("SELECT am FROM ArticuloManufacturado am WHERE am.tiempoEstimadoCocina = :tiempo")
     List<ArticuloManufacturado> findArticulosPorTiempoEstimadoCocina(@Param("tiempo") Integer tiempo, Pageable pageable);
 
+    @Query(value = "SELECT * FROM articulo_manufacturado WHERE denominacion LIKE %:filtro%", nativeQuery = true)
+    List<ArticuloManufacturado> searchNativo(@Param("filtro") String filtro);
 
-
-    // (Buscar un Articulo Manufacturado segun su denominacion)
-    @Query(value = "SELECT * FROM ArticuloManufacturado WHERE ArticuloManufacturado.denominacion LIKE %:filtro%",
+    @Query(value = "SELECT * FROM articulo_manufacturado WHERE denominacion LIKE %:filtro%",
+            countQuery = "SELECT count(*) FROM articulo_manufacturado",
             nativeQuery = true)
-    static List<ArticuloManufacturado> searchNativo(@Param("filtro") String filtro) {
-        return null;
-    }
-
-    @Query(value = "SELECT * FROM ArticuloManufacturado WHERE ArticuloManufacturado.ddenominacion LIKE %:filtro",
-            countQuery = "SELECT count(*) FROM ArticuloManufacturado",
-            nativeQuery = true)
-    static Page<ArticuloManufacturado> searchNativo(@Param("filtro") String filtro, Pageable pageable) {
-        return null;
-    }
+    Page<ArticuloManufacturado> searchNativo(@Param("filtro") String filtro, Pageable pageable);
 
 }

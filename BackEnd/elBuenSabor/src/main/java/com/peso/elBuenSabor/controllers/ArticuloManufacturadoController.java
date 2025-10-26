@@ -3,12 +3,12 @@ package com.peso.elBuenSabor.controllers;
 import com.peso.elBuenSabor.DTOs.DTORankingProducto;
 import com.peso.elBuenSabor.entities.ArticuloManufacturado;
 import com.peso.elBuenSabor.services.ArticuloManufacturadoServiceImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.print.Pageable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -18,6 +18,7 @@ import java.util.List;
 @RequestMapping(path = "elbuensabor/v1/articulosmanufacturados")
 public class ArticuloManufacturadoController extends BaseControllerImpl<ArticuloManufacturado, ArticuloManufacturadoServiceImpl> {
 
+    // 🔹 Versión sin paginación (trae todo)
     @GetMapping("/denominacion")
     public ResponseEntity<?> getArticulosByDenominacion(@RequestParam String denominacion) {
         try {
@@ -26,6 +27,19 @@ public class ArticuloManufacturadoController extends BaseControllerImpl<Articulo
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"Error\":\"Error, por favor, intente mas tarde\"}");
         }
     }
+
+    // 🔹 Versión paginada
+    @GetMapping("/denominacion/page")
+    public ResponseEntity<?> getArticulosByDenominacionPageable(
+            @RequestParam String denominacion,
+            Pageable pageable) {
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findByDenominacion(denominacion, pageable));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"Error\":\"Error, por favor, intente mas tarde\"}");
+        }
+    }
+
 
     @GetMapping("/precioMayor")
     public ResponseEntity<?> getArticulosConPrecioMayorQue(@RequestParam BigDecimal precio) {
@@ -55,7 +69,7 @@ public class ArticuloManufacturadoController extends BaseControllerImpl<Articulo
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date fechaFin
     ){
         try {
-            List<DTORankingProducto> ranking = servicio.findTopSellingProducts();
+            List<DTORankingProducto> ranking = servicio.findTopSellingProductsByFecha(fechaIn, fechaFin);
             return ResponseEntity.ok(ranking);
         } catch (Exception e) {
             e.printStackTrace();

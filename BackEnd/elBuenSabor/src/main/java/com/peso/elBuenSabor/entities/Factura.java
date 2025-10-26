@@ -19,7 +19,7 @@ import java.util.List;
 public class Factura extends Base{
 
     @NotNull
-    @Column(name = "fecha_facturacion")
+    @Column(nullable = false, name = "fecha_facturacion")
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaFacturacion;
 
@@ -39,11 +39,11 @@ public class Factura extends Base{
     private FormaPago formaPago;
 
     @NotNull
-    @Column(name = "total_venta")
+    @Column(nullable = false, name = "total_venta")
     private double totalVenta;
 
     @NotNull
-    @Column(name = "fecha_alta")
+    @Column(nullable = false, name = "fecha_alta")
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaAlta;
 
@@ -55,8 +55,8 @@ public class Factura extends Base{
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaBaja;
 
-    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "Factura_id")
-    private List<DetalleFactura> detalleFacturas = new ArrayList<>();
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JoinColumn(name = "pedido_id")
+    private Pedido pedido;
 
 }

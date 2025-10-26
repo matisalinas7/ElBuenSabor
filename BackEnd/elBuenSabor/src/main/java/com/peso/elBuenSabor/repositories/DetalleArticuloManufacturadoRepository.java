@@ -11,6 +11,6 @@ import java.util.Date;
 import java.util.List;
 
 @Repository
-public interface DetalleArticuloManufacturadoRepository extends BaseRepository<DetalleArticuloManufacturado, Date> {
+public interface DetalleArticuloManufacturadoRepository extends BaseRepository<DetalleArticuloManufacturado, Long> {
 
 }

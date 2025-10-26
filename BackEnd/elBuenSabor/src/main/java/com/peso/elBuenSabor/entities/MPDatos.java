@@ -40,12 +40,4 @@ public class MPDatos extends Base {
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaBaja;
 
-    @OneToOne
-    @JoinColumn(name = "id_mp_datos")
-    private MPDatos mpDatos;
-
-//    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-//    @JoinColumn(name = "pedido_id")
-//    private Pedido pedido;
-
 }

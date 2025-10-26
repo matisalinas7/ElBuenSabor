@@ -5,6 +5,7 @@ import lombok.*;
 import org.antlr.v4.runtime.misc.NotNull;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,34 +18,35 @@ import java.util.List;
 @Setter
 public class ArticuloInsumo extends Base{
 
+    @NotNull
+    @Column(nullable = false)
     private String nombre;
+
     @NotNull
-    private String denominacion;
-    @NotNull
-    @Column(length = 1000)
+    @Column(nullable = false, length = 1000)
     private String descripcion;
 
     @Column(name = "url_imagen")
     private String urlImagen;
 
     @NotNull
-    @Column(name = "precio_compra")
+    @Column(nullable = false, name = "precio_compra")
     private BigDecimal precioCompra;
 
     @NotNull
-    @Column(name = "stock_actual")
+    @Column(nullable = false, name = "stock_actual")
     private BigDecimal stockActual;
 
     @NotNull
-    @Column(name = "stock_minimo")
+    @Column(nullable = false, name = "stock_minimo")
     private BigDecimal stockMinimo;
 
     @NotNull
-    @Column(name = "unidad_medida")
+    @Column(nullable = false, name = "unidad_medida")
     private String unidadMedida;
 
     @NotNull
-    @Column(name = "fecha_alta")
+    @Column(nullable = false, name = "fecha_alta")
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaAlta;
 
@@ -55,17 +57,5 @@ public class ArticuloInsumo extends Base{
     @Column(name = "fecha_baja")
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaBaja;
-
-    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "ArticuloInsumo_id")
-    private List<DetallePedido> detallePedidos = new ArrayList<>();
-
-    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "articulo_insumo_id")
-    private List<DetalleArticuloManufacturado> detalleArticuloManufacturados = new ArrayList<>();
-
-    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "articulo_insumo_id")
-    private List<DetalleFactura> detalleFacturas = new ArrayList<>();
 
 }

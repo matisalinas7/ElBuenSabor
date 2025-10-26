@@ -17,22 +17,21 @@ import java.util.List;
 @Setter
 public class ArticuloManufacturado extends Base{
 
-
+    @NotNull
+    @Column(nullable = false)
     private String nombre;
-    @NotNull
-    private String denominacion;
 
     @NotNull
-    @Column(length = 1000)
+    @Column(nullable = false, length = 1000)
     private String descripcion;
 
     @NotNull
-    @Column(name = "tiempo_estimado_cocina")
+    @Column(nullable = false, name = "tiempo_estimado_cocina")
     private Integer tiempoEstimadoCocina;
 
     @NotNull
-    @Column(name = "precio_venta")
-    private Double precioVenta;
+    @Column(nullable = false, name = "precio_venta")
+    private BigDecimal precioVenta;
 
     @Column(name = "costo")
     private BigDecimal costo;
@@ -41,7 +40,7 @@ public class ArticuloManufacturado extends Base{
     private String urlImagen;
 
     @NotNull
-    @Column(name = "fecha_alta")
+    @Column(nullable = false, name = "fecha_alta")
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaAlta;
 
@@ -53,15 +52,12 @@ public class ArticuloManufacturado extends Base{
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaBaja;
 
-    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
+    @ManyToOne
+    @JoinColumn(name = "rubro_articulo_id")
+    private RubroArticulo rubroArticulo;
+
+    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.LAZY)
     @JoinColumn(name = "articulo_manufacturado_id")
     private List<DetalleArticuloManufacturado> detalleArticulosManufacturados = new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "articulo_manufacturado_id")
-    private List<DetalleFactura> detalleFacturas = new ArrayList<>();
-
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "articulo_manufacturado_id")
-    private List<ArticuloInsumo> articulosInsumos = new ArrayList<>();
 }

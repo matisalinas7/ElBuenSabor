@@ -21,30 +21,28 @@ import java.math.BigDecimal;
 public class DetallePedido extends Base{
 
     @NotNull
+    @Column(nullable = false)
     private Long cantidad;
 
-    @Transient
     @NotNull
-    @Column(name = "subtotal")
-    private Double subtotal;
-
-    @NotNull
-    @Column(name = "subtotal_costo")
+    @Column(nullable = false, name = "subtotal_costo")
     private BigDecimal subtotalCosto;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(nullable = false, name = "articulo_manufacturado_id")
     private ArticuloManufacturado articuloManufacturado;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "pedido_id")
     private Pedido pedido;
 
     @Transient
-    public Double getSubtotal() {
-        if(this.articuloManufacturado.getPrecioVenta() != null && this.cantidad != null) {
-            return this.cantidad * this.articuloManufacturado.getPrecioVenta();
-        }else {
-            return 0.0;
+    public BigDecimal getSubtotal() {
+        if (articuloManufacturado != null && articuloManufacturado.getPrecioVenta() != null && cantidad != null) {
+            return articuloManufacturado.getPrecioVenta()
+                    .multiply(BigDecimal.valueOf(cantidad));
         }
+        return BigDecimal.ZERO;
     }
 
 }

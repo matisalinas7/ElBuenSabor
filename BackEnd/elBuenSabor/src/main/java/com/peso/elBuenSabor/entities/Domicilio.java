@@ -17,18 +17,19 @@ import java.util.List;
 public class Domicilio extends Base{
 
     @NotNull
-    @Column(length = 500)
+    @Column(nullable = false, length = 500)
     private String calle;
 
     @NotNull
-    @Column(precision = 5)
+    @Column(nullable = false, precision = 5)
     private Integer numero;
 
     @NotNull
-    @Column(precision = 4)
+    @Column(nullable = false, precision = 4)
     private Integer codigoPostal;
 
     @NotNull
+    @Column(nullable = false)
     private String localidad;
 
     @Column(name = "numero_vivienda")
@@ -38,7 +39,7 @@ public class Domicilio extends Base{
     private Integer pisoDpto;
 
     @NotNull
-    @Column(name = "fecha_alta")
+    @Column(nullable = false, name = "fecha_alta")
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaAlta;
 
@@ -50,7 +51,7 @@ public class Domicilio extends Base{
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaBaja;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "domicilio_id")
-    private List<Pedido> pedidos = new ArrayList<>();
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
 }

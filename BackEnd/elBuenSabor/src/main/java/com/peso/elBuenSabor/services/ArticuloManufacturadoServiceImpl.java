@@ -5,6 +5,8 @@ import com.peso.elBuenSabor.entities.ArticuloManufacturado;
 import com.peso.elBuenSabor.repositories.ArticuloManufacturadoRepository;
 import com.peso.elBuenSabor.repositories.BaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Service;
 
@@ -27,8 +29,16 @@ public class ArticuloManufacturadoServiceImpl extends BaseServiceImpl<ArticuloMa
     @Override
     public List<ArticuloManufacturado> findByDenominacion(String denominacion) throws Exception {
         try {
-            List<ArticuloManufacturado> articulosManufacturados = articuloManufacturadoRepository.findByDenominacion(denominacion);
-            return articulosManufacturados;
+            return articuloManufacturadoRepository.findByDenominacion(denominacion);
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public Page<ArticuloManufacturado> findByDenominacion(String denominacion, Pageable pageable) throws Exception {
+        try {
+            return articuloManufacturadoRepository.findByDenominacion(denominacion, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
